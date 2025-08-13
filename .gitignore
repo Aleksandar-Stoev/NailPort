@@ -6,9 +6,11 @@ __pycache__/
 
 # Virtual env
 venv/
+.venv/
 .env
+.env.*
 
-# Django collectstatic
+# Django collectstatic / uploads
 static/
 staticfiles/
 media/
