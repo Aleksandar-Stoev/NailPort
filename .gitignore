@@ -21,4 +21,4 @@ mediafiles/
 .vscode/
 
 # Docker
-*.log
+*.log.env
