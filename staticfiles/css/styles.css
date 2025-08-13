@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link-btn {
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 15px;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link-btn:hover {
+    text-decoration: underline;
+}

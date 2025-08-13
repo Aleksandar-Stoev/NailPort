@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Profile update{% endblock %}
+
+{% block content %}
+  <section class="form-section">
+    <h2>Profile update</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+
+      <button type="submit" class="btn btn-primary">Save changes</button>
+    </form>
+  </section>
+{% endblock %}

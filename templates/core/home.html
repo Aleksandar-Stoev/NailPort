@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head_extra %}
+    <!-- Място за специфичен CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+  {% if show_profile_banner %}
+    <div class="profile-banner">
+      <div class="banner-message">
+        <span class="banner-title">Please, complete your profile to unlock more features and benefits. Click here to update your information:</span>
+        <a href="{% url 'profile_update' %}" class="banner-link">
+          Please fill in your first name, last name and phone number.
+        </a>
+      </div>
+      <button class="close-banner" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+  {% endif %}
+
+  <section class="home-hero">
+    <h1 class="home-title">Welcome to <span class="brand">NailPort</span> 💅</h1>
+    <p class="home-subtitle">Your place for professional manicure tools and accessories</p>
+{#    <a href="{% url 'products_list' %}" class="btn btn-primary">View products</a>#}
+    <a href="#" class="btn btn-primary">View products</a>
+  </section>
+{% endblock %}
+
+{% block scripts_extra %}
+    <!-- Място за специфичен JavaScript -->
+    <script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

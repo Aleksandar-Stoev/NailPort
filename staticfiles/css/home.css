@@ -1,0 +1,173 @@
+/* Банер за довършване на профила */
+.profile-banner {
+    background-color: #fffbea;
+    border: 1px solid #facc15;
+    color: #78350f;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.banner-title {
+    font-weight: 600;
+}
+
+.banner-link {
+    color: #2563eb;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+}
+
+.banner-link:hover {
+    color: #1d4ed8;
+}
+
+.close-banner {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #dc2626;
+}
+
+.close-banner:hover {
+    color: #b91c1c;
+}
+
+
+/* Hero секция на начална страница */
+.home-hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 0.5rem;
+    background-image: url('https://i.pinimg.com/564x/13/8f/34/138f341a125b96e438d478cd2f453fd8.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* затъмняване за по-добър контраст */
+}
+
+.home-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #7c3aed;
+}
+
+.brand {
+    color: #d946ef;
+    font-weight: bold;
+}
+
+.home-subtitle {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #9333ea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #7e22ce;
+}
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .profile-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .close-banner {
+        align-self: flex-end;
+    }
+}
+
+/*.profile-banner {*/
+/*    background-color: #fefcbf;        !* светложълто *!*/
+/*    border: 1px solid #f6e05e;        !* златиста рамка *!*/
+/*    color: #975a16;                   !* тъмно жълто-кафяв текст *!*/
+/*    padding: 0.75rem 1rem;            !* вътрешни отстояния *!*/
+/*    border-radius: 0.375rem;          !* заоблени ъгли *!*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*    margin: 1rem 0;*/
+/*}*/
+
+/*.banner-message {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 0.5rem;*/
+/*}*/
+
+/*.banner-title {*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.banner-link {*/
+/*    color: #2563eb;                   !* синьо *!*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*.banner-link:hover {*/
+/*    color: #1d4ed8;                   !* по-тъмно синьо при hover *!*/
+/*}*/
+
+/*.close-banner {*/
+/*    font-size: 1.25rem;*/
+/*    font-weight: bold;*/
+/*    background: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    color: #dc2626;                   !* червено *!*/
+/*}*/
+
+/*.close-banner:hover {*/
+/*    color: #b91c1c;                   !* по-тъмно червено при hover *!*/
+/*}*/
