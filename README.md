@@ -21,15 +21,3 @@ docker-compose exec web python manage.py migrate
 
 5. Create a superuser (Windows Git Bash):
 winpty docker-compose run --rm web python manage.py createsuperuser
-
-Useful Commands
-
-# Make and apply migrations
-docker-compose exec web python manage.py makemigrations
-docker-compose exec web python manage.py migrate
-
-# Collect static files
-docker-compose exec web python manage.py collectstatic --noinput
-
-# Open Django shell
-docker-compose exec web python manage.py shell
