@@ -21,3 +21,5 @@ mediafiles/
 
 # Docker
 *.log.env
+_postgres_data/
+db.sqlite3
